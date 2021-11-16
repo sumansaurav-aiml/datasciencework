@@ -1,0 +1,75 @@
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Starting Top Trending recommendation
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Reading data from CSV file USER_ACTIVITY_WITH_TIME_PORTAL
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\src\rec_sys_hybrid.py", line 697, in rec_sys_for_hybrid_model
+    df = self._reading_data()
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\src\rec_sys_hybrid.py", line 66, in _reading_data
+    df = pd.read_csv(self._IN_FILE_PATH)
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\venv\lib\site-packages\pandas\io\parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\venv\lib\site-packages\pandas\io\parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\venv\lib\site-packages\pandas\io\parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\venv\lib\site-packages\pandas\io\parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\venv\lib\site-packages\pandas\io\parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas\_libs\parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas\_libs\parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: './tests/data/jobid1/trainingfiles/USER_ACTIVITY_WITH_TIME_PORTAL.CSV'
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Starting Top Trending recommendation
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Reading data from CSV file USER_ACTIVITY_WITH_TIME_PORTAL
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\src\rec_sys_hybrid.py", line 697, in rec_sys_for_hybrid_model
+    df = self._reading_data()
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\src\rec_sys_hybrid.py", line 66, in _reading_data
+    df = pd.read_csv(self._IN_FILE_PATH)
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\venv\lib\site-packages\pandas\io\parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\venv\lib\site-packages\pandas\io\parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\venv\lib\site-packages\pandas\io\parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\venv\lib\site-packages\pandas\io\parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\venv\lib\site-packages\pandas\io\parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas\_libs\parsers.pyx", line 540, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Starting Top Trending recommendation
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Reading data from CSV file USER_ACTIVITY_WITH_TIME_PORTAL
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\SumanS\PycharmProjects\recommender_system\src\rec_sys_hybrid.py", line 699, in rec_sys_for_hybrid_model
+    raise Exception('No Data found')
+Exception: No Data found
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Starting Top Trending recommendation
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Reading data from CSV file USER_ACTIVITY_WITH_TIME_PORTAL
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Starting Collaborative Filter recommendation
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Exporting Collaborative Filtering recommendation to CSV file TOP_COL_FILTER_REC_PROD_FOR_PORTALS_USERS
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Finished Collaborative Filtering recommendation!
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Starting Top past rated recommendation
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Exporting Top past rated recommendation to CSV file TOP_OWN_PAST_RATED_PROD_FOR_PORTALS_USERS
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Finished Top past rated recommendation!
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Starting Hybrid recommendation
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Exporting Hybrid recommendation to CSV file TOP_HYBRID_REC_FOR_PORTALS_USERS
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Finished Hybrid recommendation!
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Prediction done successfully!!!
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Starting Top Trending recommendation
+03-Sep-21 16:05:16 - src.rec_sys_hybrid - 117668 - INFO - Reading data from CSV file USER_ACTIVITY_WITH_TIME_PORTAL
+03-Sep-21 16:05:19 - src.rec_sys_hybrid - 117668 - INFO - Exporting Top Trending recommendation to CSV file TOP_TRENDING_PROD_FOR_PORTALS
+03-Sep-21 16:05:19 - src.rec_sys_hybrid - 117668 - INFO - Finished Top Trending recommendation!
+03-Sep-21 16:05:19 - src.rec_sys_hybrid - 117668 - INFO - Starting Collaborative Filter recommendation
+03-Sep-21 16:05:20 - src.rec_sys_hybrid - 117668 - INFO - Exporting Exporting Top Neighbours for a user to CSV file top_n_neighbours
+03-Sep-21 16:05:20 - src.rec_sys_hybrid - 117668 - INFO - Exporting Collaborative Filtering recommendation to CSV file TOP_COL_FILTER_REC_PROD_FOR_PORTALS_USERS
+03-Sep-21 16:05:20 - src.rec_sys_hybrid - 117668 - INFO - Finished Collaborative Filtering recommendation!
+03-Sep-21 16:05:20 - src.rec_sys_hybrid - 117668 - INFO - Starting Top past rated recommendation
+03-Sep-21 16:05:21 - src.rec_sys_hybrid - 117668 - INFO - Exporting Top past rated recommendation to CSV file TOP_OWN_PAST_RATED_PROD_FOR_PORTALS_USERS
+03-Sep-21 16:05:21 - src.rec_sys_hybrid - 117668 - INFO - Finished Top past rated recommendation!
+03-Sep-21 16:05:21 - src.rec_sys_hybrid - 117668 - INFO - Starting Hybrid recommendation
+03-Sep-21 16:05:24 - src.rec_sys_hybrid - 117668 - INFO - Exporting Hybrid recommendation to CSV file TOP_HYBRID_REC_FOR_PORTALS_USERS
+03-Sep-21 16:05:24 - src.rec_sys_hybrid - 117668 - INFO - Finished Hybrid recommendation!
+03-Sep-21 16:05:24 - src.rec_sys_hybrid - 117668 - INFO - Prediction done successfully!!!
